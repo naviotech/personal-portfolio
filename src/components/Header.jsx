@@ -1,7 +1,9 @@
+import { useTranslation } from "react-i18next"
 
 // eslint-disable-next-line react/prop-types
 const Header = ({ theme, handleSun, handleMoon }) => {
-  
+  const [ t, i18n ] = useTranslation("global")
+
   return (
     <header className="p-4 flex flex-col justify-center items-center md:px-10 lg:px-20 font-inter dark:bg-dark-default">
       <nav className="w-full flex justify-between items-center max-w-screen-xl dark:bg-dark-default">
@@ -14,10 +16,10 @@ const Header = ({ theme, handleSun, handleMoon }) => {
           <h2 className="font-bold text-2xl py-1 mb-6 md:hidden dark:text-dark-title">{"<EN />"}</h2>
           <hr className="md:hidden"/>
           <ul className="flex flex-col justify-center items-center gap-2 text-xl mt-6 mb-6 md:flex-row md:p-3 md:gap-2 lg:gap-12 lg:max-w-[60%]">
-            <li className="text-gray-500 hover:text-black hover:transform md:text-base transition-all duration-200 cursor-pointer lg:text-lg lg:text-black lg:hover:font-bold  dark:text-dark-title dark:hover:scale-110 dark:hover:text-dark-title"><a href="#about">About</a></li>
-            <li className="text-gray-500 hover:text-black hover:transform  md:text-base transition-all duration-200 cursor-pointer lg:text-lg lg:text-black lg:hover:font-bold dark:text-dark-title dark:hover:scale-110 dark:hover:text-dark-title"><a href="#projects">Projects</a></li>
-            <li className="text-gray-500 hover:text-black hover:transform  md:text-base transition-all duration-200 cursor-pointer lg:text-lg lg:text-black lg:hover:font-bold dark:text-dark-title dark:hover:scale-110 dark:hover:text-dark-title"><a href="#education">Education</a></li>
-            <li className="text-gray-500 hover:text-black hover:transform  md:text-base transition-all duration-200 cursor-pointer lg:text-lg lg:text-black lg:hover:font-bold dark:text-dark-title dark:hover:scale-110 dark:hover:text-dark-title"><a href="#contact">Contact</a></li>
+            <li className="text-gray-500 hover:text-black hover:transform md:text-base transition-all duration-200 cursor-pointer lg:text-lg lg:text-black lg:hover:font-bold  dark:text-dark-title dark:hover:scale-110 dark:hover:text-dark-title"><a href="#about">{t("header.about")}</a></li>
+            <li className="text-gray-500 hover:text-black hover:transform  md:text-base transition-all duration-200 cursor-pointer lg:text-lg lg:text-black lg:hover:font-bold dark:text-dark-title dark:hover:scale-110 dark:hover:text-dark-title"><a href="#projects">{t("header.projects")}</a></li>
+            <li className="text-gray-500 hover:text-black hover:transform  md:text-base transition-all duration-200 cursor-pointer lg:text-lg lg:text-black lg:hover:font-bold dark:text-dark-title dark:hover:scale-110 dark:hover:text-dark-title"><a href="#education">{t("header.education")}</a></li>
+            <li className="text-gray-500 hover:text-black hover:transform  md:text-base transition-all duration-200 cursor-pointer lg:text-lg lg:text-black lg:hover:font-bold dark:text-dark-title dark:hover:scale-110 dark:hover:text-dark-title"><a href="#contact">{t("header.contatc")}</a></li>
           </ul>
           <hr className="md:hidden"/>
           <div className="flex items-center justify-between">
@@ -49,9 +51,14 @@ const Header = ({ theme, handleSun, handleMoon }) => {
             }
             
           </div>
-          <div className="w-full flex justify-center items-center md:hidden cursor-pointer">
-            <a className="text-center py-2 min-w-full rounded-lg dark:bg-dark-title bg-gray-900 dark:text-black text-white hover:bg-gray-900/50 hover:text-black font-bold md:text-sm dark:hover:bg-slate-500 dark:hover:text-dark-title">Download CV</a>
+          <div className="flex gap-3 mb-10 w-full justify-center md:w-auto md:m-0 ">
+            <button onClick={()=> i18n.changeLanguage("es")} className="text-3xl">🇪🇸</button>
+            <button onClick={()=> i18n.changeLanguage("en")} className="text-3xl">🇺🇸</button>
           </div>
+          <div className="w-full flex justify-center items-center md:hidden cursor-pointer">
+            <a className="text-center py-2 min-w-full rounded-lg dark:bg-dark-title bg-gray-900 dark:text-black text-white hover:bg-gray-900/50 hover:text-black font-bold md:text-sm dark:hover:bg-slate-500 dark:hover:text-dark-title">{t("header.cv")}</a>
+          </div>
+          
         </div>
       </nav>
 
@@ -61,11 +68,11 @@ const Header = ({ theme, handleSun, handleMoon }) => {
         </figure>
         
         <article className="md:w-[60%]">
-          <h1 className=" text-2xl mb-2 lg:text-4xl dark:text-dark-title">{"I'm"} <strong>Edu</strong> 🙋🏼‍♂️,</h1>
-          <p className="text-black lg:text-xl dark:text-white md:w-[80%]">{"And I create intuitive and dynamic user experiences for websites and applications, ensuring maximum usability."}</p>
+          <h1 className=" text-2xl mb-2 lg:text-4xl dark:text-dark-title">{t("header.soy")} <strong>Edu</strong> 🙋🏼‍♂️,</h1>
+          <p className="text-black lg:text-xl dark:text-white md:w-[80%]">{t("header.presentation")}</p>
           <div className="flex gap-2 mt-10">
             <img src="/svg/ubication.svg"></img>
-            <p className="dark:text-dark-subtitle">Barcelona, Spain</p>
+            <p className="dark:text-dark-subtitle">{t("header.ubication")}</p>
           </div>
           <div className="flex gap-4 mt-6 mb-6 justify-start items-center">
             <a href="https://github.com/naviotech" target="_blank" className="hover:scale-110 transition-all"><img src="/svg/git.svg"></img></a>
@@ -73,7 +80,7 @@ const Header = ({ theme, handleSun, handleMoon }) => {
             <a href="mailto:naviomaya@gmail.com" target="_blank" className="hover:scale-110 transition-all"><img src="/svg/mail.svg"></img></a>
           </div>
           <div className="md:w-[40%] hidden  md:justify-center md:flex md:items-center cursor-pointer">
-            <a className="text-center py-3 min-w-full rounded-lg dark:bg-dark-title dark:text-black bg-gray-900 text-white hover:bg-gray-900/50 hover:text-black font-bold md:text-sm dark:hover:bg-slate-500 dark:hover:text-dark-title">Download CV</a>
+            <a className="text-center py-3 min-w-full rounded-lg dark:bg-dark-title dark:text-black bg-gray-900 text-white hover:bg-gray-900/50 hover:text-black font-bold md:text-sm dark:hover:bg-slate-500 dark:hover:text-dark-title">{t("header.cv")}</a>
           </div>
         </article>
       </section>

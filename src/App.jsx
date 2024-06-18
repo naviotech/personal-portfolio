@@ -22,7 +22,7 @@ function App() {
 
   useEffect(()=>{
     const savedTheme = localStorage.getItem('theme')
-    console.log(savedTheme)
+    
     const themeSystem = window.matchMedia('(prefers-color-scheme: dark)').matches;
     if (savedTheme) {
       setTheme(savedTheme);

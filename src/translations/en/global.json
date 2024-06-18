@@ -1,0 +1,55 @@
+{
+  "header":{
+    "about": "About",
+    "projects": "Projects",
+    "education": "Education",
+    "contatc": "Contact",
+    "soy": "I'm",
+    "presentation": "And I create intuitive and dynamic user experiences for websites and applications, ensuring maximum usability.",
+    "ubication": "Barcelona, Spain",
+    "cv": "Download CV"
+  },
+  "main": {
+    "aboutMe": {
+      "title": "About me",
+      "aboutP1": "I'm passionate about motorcycles, sports, and nutrition, finding joy in staying active and healthy through exercise and balanced eating habits. Riding through nature on my motorcycle is my ideal way to clear my mind.",
+      "aboutP2": "I'm always eager to learn and grow in all aspects of life, believing strongly in maintaining an active lifestyle and continually seeking knowledge to thrive both personally and professionally."
+    },
+    "experience": {
+      "exp1": "Although I don’t yet have professional experience in the development world, I have invested a lot of time and effort into learning and creating projects on my own.",
+      "exp2": "nstead of seeing this as a disadvantage, I believe it has allowed me to be self-taught and develop problem-solving abilities in a certain way. I’m always looking for challenges that allow me to grow and improve my skills.",
+      "title": "Experience"
+    },
+    "skills":{
+      "title": "Skills",
+      "more": "More",
+      "database": "DataBase"
+    },
+    "education": {
+      "title": "Education",
+      "master": "(Master's degree)",
+      "course": "(Course)",
+      "sep": "sep.",
+      "jan": "jan.",
+      "dec": "dec."
+    },
+    "projects": {
+      "title": "Projects",
+      "url": "URL Shortener",
+      "urlp": "His is a real-time cryptocurrency quote tool, featuring the day's most important news in the crypto world.",
+      "cripto": "Crypto quote",
+      "criptop": "A cryptocurrency converter allows users to quickly convert between different cryptocurrencies and traditional currencies. It provides real-time exchange rates and supports a variety of cryptocurrencies, offering a convenient tool for tracking and managing crypto investments.",
+      "fitness": "Fitness Calculator",
+      "fitnessp": "An app that calculates the meals you consume throughout the day along with the exercise you do, and generates a total energy balance for your day.",
+      "game": "Matching pairs game",
+      "gamep": "Animal matching pairs game with a timer.",
+      "ecomerce": "Headphones e-commerce",
+      "ecomercep": "Headphones e-commerce with integrated store and simulated payment.",
+      "guitar": "Guitar Shop",
+      "guitarp": "Project of a guitar store with an included shopping cart."
+    }
+  },
+  "footer": {
+    "contact": "Contact"
+  }
+}

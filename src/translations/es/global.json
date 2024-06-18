@@ -1,0 +1,55 @@
+{
+  "header":{
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "education": "Educación",
+    "contatc": "Contacto",
+    "soy": "Soy",
+    "presentation": "Y creo experiencias de usuario intuitivas y dinámicas para sitios web y aplicaciones, asegurando máxima usabilidad.",
+    "ubication": "Barcelona, España",
+    "cv": "Descargar CV"
+  },
+  "main": {
+    "aboutMe": {
+      "title": "Sobre mí",
+      "aboutP1": "Me apasionan las motocicletas, el deporte y la nutrición. Encuentro alegría en mantenerme activo y saludable a través del ejercicio y hábitos alimenticios equilibrados. Montar en moto por la naturaleza es mi manera ideal de despejar la mente.",
+      "aboutP2": "Siempre estoy deseoso de aprender y crecer en todos los aspectos de la vida, creyendo firmemente en mantener un estilo de vida activo y buscar constantemente conocimientos para prosperar tanto personal como profesionalmente."
+    },
+    "experience": {
+      "exp1": "Aunque aún no tengo experiencia profesional en el mundo del desarrollo, he invertido mucho tiempo y esfuerzo en aprender y crear proyectos por mi cuenta.",
+      "exp2": "En lugar de ver esto como una desventaja, creo que me ha permitido ser autodidacta y desarrollar habilidades para resolver problemas de cierta manera. Siempre estoy buscando desafíos que me permitan crecer y mejorar mis habilidades.",
+      "title": "Experiencia"
+    },
+    "skills":{
+      "title": "Habilidades",
+      "more": "Más",
+      "database": "Base de Datos"
+    },
+    "education": {
+      "title": "Educación",
+      "master": "(Máster)",
+      "course": "(Curso)",
+      "sep": "sept.",
+      "jan": "ene.",
+      "dec": "dic."
+    },
+    "projects": {
+      "title": "Proyectos",
+      "url": "Acortador de URL",
+      "urlp": "Herramienta de cotización de criptomonedas en tiempo real, que incluye las noticias más importantes del mundo de las criptomonedas del día.",
+      "cripto": "Cotización de criptomonedas",
+      "criptop": "Un conversor de criptomonedas que permite a los usuarios convertir rápidamente entre diferentes criptomonedas y monedas tradicionales. Proporciona tasas de cambio en tiempo real y soporta una variedad de criptomonedas, ofreciendo una herramienta conveniente para el seguimiento y gestión de inversiones en criptomonedas.",
+      "fitness": "Calculadora fitness",
+      "fitnessp": "Una aplicación que calcula las comidas que consumes a lo largo del día junto con el ejercicio que realizas, y genera un balance total de energía para tu día.",
+      "game": "Juego de parejas",
+      "gamep": "Juego de parejas de animales con temporizador.",
+      "ecomerce": "Comercio electrónico de auriculares",
+      "ecomercep": "Comercio electrónico de auriculares con tienda integrada y simulación de pagos.",
+      "guitar": "Tienda de guitarras",
+      "guitarp": "Proyecto de una tienda de guitarras con carrito de compras incluido."
+    }
+  },
+  "footer": {
+    "contact": "Contacto"
+  }
+}

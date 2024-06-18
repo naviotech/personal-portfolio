@@ -2,6 +2,7 @@ import Cart from "./Cart"
 import Tech from "./Tech"
 import EducationItem from "./Education"
 import { useState } from "react"
+import { useTranslation } from "react-i18next"
 
 const Main = () => {
   const [ front, setFront ] = useState(false)
@@ -9,23 +10,25 @@ const Main = () => {
   const [ data, setData ] = useState(false)
   const [ more, setMore ] = useState(false)
 
+  const [ t ] = useTranslation("global")
+
   return (
     <main className='flex flex-col justify-center items-center dark:bg-dark-default  font-inter'>
       <section className="bg-gray-50 dark:bg-dark-secondary w-full p-4 py-16 md:px-10 lg:px-20 flex flex-col justify-center items-center">
         <article className="max-w-screen-xl lg:flex lg:flex-col lg:justify-center lg:items-center">
-          <h2 id="about" className="text-center font-bold text-2xl mb-6 md:text-2xl xl:text-3xl dark:text-dark-title">About me</h2>
-          <p className="mb-6 text-center text-gray-600 dark:text-dark-subtitle lg:w-[60%]">{"I'm passionate about motorcycles, sports, and nutrition, finding joy in staying active and healthy through exercise and balanced eating habits. Riding through nature on my motorcycle is my ideal way to clear my mind."}</p>
-          <p className="text-gray-600 text-center lg:w-[60%] dark:text-dark-subtitle">{"I'm always eager to learn and grow in all aspects of life, believing strongly in maintaining an active lifestyle and continually seeking knowledge to thrive both personally and professionally."}</p>
+          <h2 id="about" className="text-center font-bold text-2xl mb-6 md:text-2xl xl:text-3xl dark:text-dark-title">{t("main.aboutMe.title")}</h2>
+          <p className="mb-6 text-center text-gray-600 dark:text-dark-subtitle lg:w-[60%]">{t("main.aboutMe.aboutP1")}</p>
+          <p className="text-gray-600 text-center lg:w-[60%] dark:text-dark-subtitle">{t("main.aboutMe.aboutP2")}</p>
         </article>
       </section>
 
       <section className="w-full p-4 py-16 md:px-10 lg:px-20 max-w-screen-2xl ">
-        <h2 id="projects" className="text-center font-bold text-2xl mb-6 md:mb-20 md:text-2xl xl:text-3xl dark:text-dark-title">Projects</h2>
+        <h2 id="projects" className="text-center font-bold text-2xl mb-6 md:mb-20 md:text-2xl xl:text-3xl dark:text-dark-title">{t("main.projects.title")}</h2>
         <section className="flex flex-col gap-12 md:grid md:grid-cols-2 md:gap-6 xl:grid-cols-3 xl:gap-6">
           <Cart
             img={"/img/short.png"}
-            title={"URL shortener"}
-            description={"his is a real-time cryptocurrency quote tool, featuring the day's most important news in the crypto world."}
+            title={t("main.projects.url")}
+            description={t("main.projects.urlp")}
             urlGit={"https://github.com/naviotech/ShortUrlApp"}
             urlWeb={"https://shorturlapp-mayadevv.netlify.app/"}
             tecnologias={["Html", "javaScript", "Css"]}
@@ -33,8 +36,8 @@ const Main = () => {
           
           <Cart
             img={"/img/coinmarket.png"}
-            title={"Crypto quote"}
-            description={"A cryptocurrency converter allows users to quickly convert between different cryptocurrencies and traditional currencies. It provides real-time exchange rates and supports a variety of cryptocurrencies, offering a convenient tool for tracking and managing crypto investments."}
+            title={t("main.projects.cripto")}
+            description={t("main.projects.criptop")}
             urlGit={"https://github.com/naviotech/CoinMarketWatch"}
             urlWeb={"https://coin-market-watch.netlify.app/"}
             tecnologias={["Html", "JavaScript", "TailwindCss", "Vite"]}
@@ -42,8 +45,8 @@ const Main = () => {
 
           <Cart
             img={"/img/Fitness.png"}
-            title={"Fitness Calculator"}
-            description={"An app that calculates the meals you consume throughout the day along with the exercise you do, and generates a total energy balance for your day."}
+            title={t("main.projects.fitness")}
+            description={t("main.projects.fitnessp")}
             urlGit={"https://github.com/naviotech/Fitness-Calculator"}
             urlWeb={"https://fitnesscalculator.netlify.app/"}
             tecnologias={["Html", "JavaScript", "TailwindCss", "Vite", "React", "TypeScript"]}
@@ -51,8 +54,8 @@ const Main = () => {
 
           <Cart
             img={"/img/parejas.png"}
-            title={"Matching pairs game"}
-            description={"Animal matching pairs game with a timer."}
+            title={t("main.projects.game")}
+            description={t("main.projects.gamep")}
             urlGit={"https://github.com/naviotech/Juego-encontrar-parejas"}
             urlWeb={"https://encontrar-parejas.netlify.app/"}
             tecnologias={["Html", "JavaScript", "Vite", "React"]}
@@ -60,8 +63,8 @@ const Main = () => {
 
           <Cart
             img={"/img/Ecomerce.png"}
-            title={"Headphones e-commerce"}
-            description={"Headphones e-commerce with integrated store and simulated payment."}
+            title={t("main.projects.ecomerce")}
+            description={t("main.projects.ecomercep")}
             urlGit={"https://github.com/naviotech/Ecomerce"}
             urlWeb={"https://ecomerce-mayadevv.netlify.app/"}
             tecnologias={["Html", "JavaScript", "Vite", "Sass", "Css"]}
@@ -69,8 +72,8 @@ const Main = () => {
 
           <Cart
             img={"/img/Guitar.png"}
-            title={"Guitar Shop"}
-            description={"Project of a guitar store with an included shopping cart."}
+            title={t("main.projects.guitar")}
+            description={t("main.projects.guitarp")}
             urlGit={"https://github.com/naviotech/guitarShop"}
             urlWeb={"https://guitarshoop.netlify.app/"}
             tecnologias={["Html", "JavaScript", "TailwindCss","React" ]}
@@ -80,7 +83,7 @@ const Main = () => {
 
       <section className="bg-gray-50 w-full p-4 py-16 md:px-10 lg:px-20 flex flex-col justify-center items-center dark:bg-dark-secondary">
         <article className="w-full max-w-screen-xl">
-          <h2 className="text-center font-bold text-2xl mb-6 md:text-2xl xl:text-3xl dark:text-dark-title">Skills</h2>
+          <h2 className="text-center font-bold text-2xl mb-6 md:text-2xl xl:text-3xl dark:text-dark-title">{t("main.skills.title")}</h2>
           <div className="flex flex-col justify-start items-start gap-6 md:justify-center md:items-center">
             <article className="w-full flex flex-col">
               <button className="self-center flex items-center justify-center gap-1 text-lg text-white bg-gray-900 dark:bg-black py-1 px-4 rounded-xl" value={front} onClick={()=>{ front ? setFront(false): setFront(true), setBack(false), setData(false),setMore(false)}}>Frontend {front ? (
@@ -138,7 +141,7 @@ const Main = () => {
               )}
             </article>
             <article className="w-full flex flex-col">
-              <button className="self-center flex items-center justify-center gap-1 text-lg text-white bg-gray-900 dark:bg-black py-1 px-4 rounded-xl" value={data} onClick={()=>{ data ? setData(false): setData(true), setBack(false), setFront(false),setMore(false)}}>Database {data ? (
+              <button className="self-center flex items-center justify-center gap-1 text-lg text-white bg-gray-900 dark:bg-black py-1 px-4 rounded-xl" value={data} onClick={()=>{ data ? setData(false): setData(true), setBack(false), setFront(false),setMore(false)}}>{t("main.skills.database")} {data ? (
                 <span>
                   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                     <rect fill="none" x="0" y="0" width="24" height="24"></rect>
@@ -161,7 +164,7 @@ const Main = () => {
               )}
             </article>
             <article className="w-full flex flex-col">
-              <button className="self-center flex items-center justify-center gap-1 text-lg text-white bg-gray-900 dark:bg-black py-1 px-4 rounded-xl" value={more} onClick={()=>{ more ? setMore(false): setMore(true), setBack(false), setData(false),setFront(false)}}>More {more ? (
+              <button className="self-center flex items-center justify-center gap-1 text-lg text-white bg-gray-900 dark:bg-black py-1 px-4 rounded-xl" value={more} onClick={()=>{ more ? setMore(false): setMore(true), setBack(false), setData(false),setFront(false)}}>{t("main.skills.more")} {more ? (
                 <span>
                   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                     <rect fill="none" x="0" y="0" width="24" height="24"></rect>
@@ -193,48 +196,48 @@ const Main = () => {
       </section>
 
       <section className="w-full p-4 py-16 md:px-10 lg:px-20 max-w-screen-2xl lg:flex lg:flex-col lg:justify-center lg:items-center">
-        <h2 className="text-center font-bold text-2xl mb-6 md:mb-20 md:text-2xl xl:text-3xl dark:text-dark-title">Experience</h2>
-        <p className="mb-6 text-center text-gray-600 dark:text-dark-subtitle lg:w-[60%]" >{"Although I don’t yet have professional experience in the development world, I have invested a lot of time and effort into learning and creating projects on my own."}</p>  
-        <p className="text-gray-600 text-center dark:text-dark-subtitle lg:w-[60%]">{"Instead of seeing this as a disadvantage, I believe it has allowed me to be self-taught and develop problem-solving abilities in a certain way. I’m always looking for challenges that allow me to grow and improve my skills."}</p>
+        <h2 className="text-center font-bold text-2xl mb-6 md:mb-20 md:text-2xl xl:text-3xl dark:text-dark-title">{t("main.experience.title")}</h2>
+        <p className="mb-6 text-center text-gray-600 dark:text-dark-subtitle lg:w-[60%]" >{t("main.experience.exp1")}</p>  
+        <p className="text-gray-600 text-center dark:text-dark-subtitle lg:w-[60%]">{t("main.experience.exp2")}</p>
       </section>
 
       <section className="bg-gray-50 dark:bg-dark-secondary w-full p-4 py-16 md:px-10 lg:px-20 flex flex-col justify-center items-center">
         <article className="w-full max-w-screen-xl flex flex-col justify-center items-center">
-          <h2 id="education" className="text-center font-bold text-2xl mb-6 md:mb-20 md:text-2xl xl:text-3xl dark:text-dark-title">Education</h2>
+          <h2 id="education" className="text-center font-bold text-2xl mb-6 md:mb-20 md:text-2xl xl:text-3xl dark:text-dark-title">{t("main.education.title")}</h2>
           <div className="flex flex-col gap-6 max-w-screen-md w-full">
             <EducationItem
-              type={"Master's degree"}
+              type={t("main.education.master")}
               institution={"ConquerX"}
               degree={"Full stack"}
-              startDate={"sep. 2022"}
+              startDate={`${t("main.education.sep")} 2022`}
               endDate={"oct. 2024"}
             />
             <EducationItem
-              type={"Course"}
+              type={t("main.education.course")}
               institution={"Udemy"}
               degree={"Tailwind"}
               startDate={"may. 2024"}
               endDate={"may. 2024"}
             />
             <EducationItem
-              type={"Course"}
+              type={t("main.education.course")}
               institution={"Udemy"}
               degree={"JavaScript"}
-              startDate={"sep. 2023"}
+              startDate={`${t("main.education.sep")} 2023`}
               endDate={"may. 2024"}
             />
             <EducationItem
-              type={"Course"}
+              type={t("main.education.course")}
               institution={"Harvard University"}
               degree={"CS50 SQL"}
-              startDate={"jan. 2023"}
+              startDate={`${t("main.education.jan")} 2023`}
               endDate={"dec. 2023"}
             />
             <EducationItem
-              type={"Course"}
+              type={t("main.education.course")}
               institution={"Harvard University"}
               degree={"CS50 Python"}
-              startDate={"jan. 2023"}
+              startDate={`${t("main.education.jan")} 2023`}
               endDate={"oct. 2023"}
             />
             

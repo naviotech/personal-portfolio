@@ -1,14 +1,17 @@
 import { useState } from "react"
+import { useTranslation } from "react-i18next"
 
 const Footer = () => {
   const [email] = useState("naviomaya@gmail.com")
+  const [ t ] = useTranslation("global")
+
   const handleCopy = ()=>{
     navigator.clipboard.writeText(email)
   }
   return (
     <footer className="p-4 flex flex-col justify-center items-center md:px-10 lg:px-20 font-inter dark:bg-dark-default">
       <section className="w-full p-4 py-16 md:px-10 lg:px-20 max-w-screen-2xl flex flex-col justify-center items-center relative">
-        <h2 id="contact" className="text-center font-bold text-2xl mb-6 md:mb-20 md:text-2xl xl:text-3xl dark:text-dark-title">Contact</h2>
+        <h2 id="contact" className="text-center font-bold text-2xl mb-6 md:mb-20 md:text-2xl xl:text-3xl dark:text-dark-title">{t("footer.contact")}</h2>
         <a href="#page" className="absolute top-[5%] right-0 lg:right-[25%] hover:scale-110">
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
             <rect fill="none" x="0" y="0" width="24" height="24"></rect>
