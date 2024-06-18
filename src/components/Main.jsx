@@ -237,14 +237,6 @@ const Main = () => {
               startDate={"jan. 2023"}
               endDate={"oct. 2023"}
             />
-            <EducationItem
-              type={"CFGS"}
-              institution={"Cedesca"}
-              degree={"Higher Technician in Nutrition"}
-              startDate={"sep. 2017"}
-              endDate={"jan. 2019"}
-            />
-            
             
           </div>
 

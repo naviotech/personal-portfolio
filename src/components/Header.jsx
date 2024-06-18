@@ -61,8 +61,8 @@ const Header = ({ theme, handleSun, handleMoon }) => {
         </figure>
         
         <article className="md:w-[60%]">
-          <h1 className="font-bold text-2xl mb-2 lg:text-4xl dark:text-dark-title">{"I'm Edu 🙋🏼‍♂️,"}</h1>
-          <p className="text-gray-500 lg:text-xl dark:text-dark-subtitle">{"I am a Junior Developer specializing in Frontend Development."}</p>
+          <h1 className=" text-2xl mb-2 lg:text-4xl dark:text-dark-title">{"I'm"} <strong>Edu</strong> 🙋🏼‍♂️,</h1>
+          <p className="text-black lg:text-xl dark:text-white md:w-[80%]">{"And I create intuitive and dynamic user experiences for websites and applications, ensuring maximum usability."}</p>
           <div className="flex gap-2 mt-10">
             <img src="/svg/ubication.svg"></img>
             <p className="dark:text-dark-subtitle">Barcelona, Spain</p>
