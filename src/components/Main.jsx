@@ -210,14 +210,14 @@ const Main = () => {
               institution={"ConquerX"}
               degree={"Full stack"}
               startDate={`${t("main.education.sep")} 2022`}
-              endDate={"oct. 2024"}
+              endDate={t("main.education.present")}
             />
             <EducationItem
               type={t("main.education.course")}
               institution={"Udemy"}
-              degree={"Tailwind"}
+              degree={"React"}
               startDate={"may. 2024"}
-              endDate={"may. 2024"}
+              endDate={t("main.education.present")}
             />
             <EducationItem
               type={t("main.education.course")}

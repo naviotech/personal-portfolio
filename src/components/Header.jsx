@@ -13,7 +13,7 @@ const Header = ({ theme, handleSun, handleMoon }) => {
         <label htmlFor="menu" className="w-10 h-10 cursor-pointer dark:bg-menu-burguer-dark bg-menu-burguer bg-cover bg-center bg-green-color rounded-lg peer-checked/menu:bg-menu-close dark:peer-checked/menu:bg-menu-close-dark transition-all duration-100 z-20 md:hidden"></label>
 
         <div className="drop hidden h-full w-[100%] absolute right-0 top-0 z-10 p-4 bg-white dark:bg-dark-default peer-checked/menu:block transition-all md:flex md:flex-row md:gap-4 md:relative md:w-[85%] md:h-auto md:bg-none md:justify-end md:text-sm md:items-center lg:gap-12">
-          <h2 className="font-bold text-2xl py-1 mb-6 md:hidden dark:text-dark-title">{"<EN />"}</h2>
+          <h2 className="font-bold text-2xl py-1 mb-6 md:hidden dark:text-dark-title"><a href="">{"<EN />"}</a></h2>
           <hr className="md:hidden"/>
           <ul className="flex flex-col justify-center items-center gap-2 text-xl mt-6 mb-6 md:flex-row md:p-3 md:gap-2 lg:gap-6 lg:max-w-[60%]">
             <li className="text-gray-500 hover:text-black hover:transform md:text-base transition-all duration-200 cursor-pointer lg:text-lg lg:text-black lg:hover:font-bold  dark:text-dark-title dark:hover:scale-110 dark:hover:text-dark-title"><a href="#about">{t("header.about")}</a></li>

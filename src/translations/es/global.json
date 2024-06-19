@@ -31,7 +31,8 @@
       "course": "(Curso)",
       "sep": "sept.",
       "jan": "ene.",
-      "dec": "dic."
+      "dec": "dic.",
+      "present": "Presente"
     },
     "projects": {
       "title": "Proyectos",
