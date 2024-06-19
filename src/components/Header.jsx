@@ -7,7 +7,7 @@ const Header = ({ theme, handleSun, handleMoon }) => {
   return (
     <header className="p-4 flex flex-col justify-center items-center md:px-10 lg:px-20 font-inter dark:bg-dark-default">
       <nav className="w-full flex justify-between items-center max-w-screen-xl dark:bg-dark-default">
-        <h1 id="page" className="font-bold text-2xl dark:text-dark-title">{"<EN />"}</h1>
+        <h1 className="font-bold text-2xl dark:text-dark-title"><a href="">{"<EN />"}</a></h1>
 
         <input type="checkbox" id="menu" className="peer/menu hidden"/>
         <label htmlFor="menu" className="w-10 h-10 cursor-pointer dark:bg-menu-burguer-dark bg-menu-burguer bg-cover bg-center bg-green-color rounded-lg peer-checked/menu:bg-menu-close dark:peer-checked/menu:bg-menu-close-dark transition-all duration-100 z-20 md:hidden"></label>
