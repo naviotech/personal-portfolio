@@ -1,6 +1,7 @@
 {
   "name": "personal-portfolio",
   "private": true,
+  "homepage": "https://naviotech.github.io/personal-portfolio/dist",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
