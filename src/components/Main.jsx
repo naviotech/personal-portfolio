@@ -26,7 +26,7 @@ const Main = () => {
         <h2 id="projects" className="text-center font-bold text-2xl mb-6 md:mb-20 md:text-2xl xl:text-3xl dark:text-dark-title">{t("main.projects.title")}</h2>
         <section className="flex flex-col gap-12 md:grid md:grid-cols-2 md:gap-6 xl:grid-cols-3 xl:gap-6">
           <Cart
-            img={"/img/short.png"}
+            img={"./img/short.png"}
             title={t("main.projects.url")}
             description={t("main.projects.urlp")}
             urlGit={"https://github.com/naviotech/ShortUrlApp"}
@@ -35,7 +35,7 @@ const Main = () => {
           />
           
           <Cart
-            img={"/img/coinmarket.png"}
+            img={"./img/coinmarket.png"}
             title={t("main.projects.cripto")}
             description={t("main.projects.criptop")}
             urlGit={"https://github.com/naviotech/CoinMarketWatch"}
@@ -44,7 +44,7 @@ const Main = () => {
           />
 
           <Cart
-            img={"/img/Fitness.png"}
+            img={"./img/Fitness.png"}
             title={t("main.projects.fitness")}
             description={t("main.projects.fitnessp")}
             urlGit={"https://github.com/naviotech/Fitness-Calculator"}
@@ -53,7 +53,7 @@ const Main = () => {
           />
 
           <Cart
-            img={"/img/parejas.png"}
+            img={"./img/parejas.png"}
             title={t("main.projects.game")}
             description={t("main.projects.gamep")}
             urlGit={"https://github.com/naviotech/Juego-encontrar-parejas"}
@@ -62,7 +62,7 @@ const Main = () => {
           />
 
           <Cart
-            img={"/img/Ecomerce.png"}
+            img={"./img/Ecomerce.png"}
             title={t("main.projects.ecomerce")}
             description={t("main.projects.ecomercep")}
             urlGit={"https://github.com/naviotech/Ecomerce"}
@@ -71,7 +71,7 @@ const Main = () => {
           />
 
           <Cart
-            img={"/img/Guitar.png"}
+            img={"./img/Guitar.png"}
             title={t("main.projects.guitar")}
             description={t("main.projects.guitarp")}
             urlGit={"https://github.com/naviotech/guitarShop"}
@@ -103,13 +103,13 @@ const Main = () => {
               )}</button>
               {front &&(
               <div className="flex mt-4 flex-wrap gap-4 w-full justify-center md:justify-center lg:gap-8 md:mt-6 lg:mt-12 md:mb-4 lg:mb-10">
-                  <Tech img={"/svg/html.svg"} title={"Html"}/>
-                  <Tech img={"/svg/css.svg"} title={"Css"}/>
-                  <Tech img={"/svg/sass.svg"} title={"Sass"}/>
-                  <Tech img={"/svg/tailwind.svg"} title={"Tailwind"}/>
-                  <Tech img={"/svg/javascript.svg"} title={"JavaScript"}/>
-                  <Tech img={"/svg/typescript.svg"} title={"TypeScript"}/>
-                  <Tech img={"/svg/react.svg"} title={"React"}/>
+                  <Tech img={"./svg/html.svg"} title={"Html"}/>
+                  <Tech img={"./svg/css.svg"} title={"Css"}/>
+                  <Tech img={"./svg/sass.svg"} title={"Sass"}/>
+                  <Tech img={"./svg/tailwind.svg"} title={"Tailwind"}/>
+                  <Tech img={"./svg/javascript.svg"} title={"JavaScript"}/>
+                  <Tech img={"./svg/typescript.svg"} title={"TypeScript"}/>
+                  <Tech img={"./svg/react.svg"} title={"React"}/>
               </div>
               )}
               

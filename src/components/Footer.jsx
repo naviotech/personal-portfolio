@@ -28,9 +28,9 @@ const Footer = () => {
         </p>
         <nav className="w-full flex justify-center items-center max-w-screen-xl">
           <div className="flex gap-4 mt-6 justify-start items-center">
-            <a href="https://github.com/naviotech" target="_blank" className="hover:scale-110 transition-all"><img src="/svg/git.svg"></img></a>
-            <a href="https://www.linkedin.com/in/naviomaya" target="_blank" className="hover:scale-110 transition-all"><img src="/svg/linkedin.svg"></img></a>
-            <a href="mailto:naviomaya@gmail.com" target="_blank" className="hover:scale-110 transition-all"><img src="/svg/mail.svg"></img></a>
+            <a href="https://github.com/naviotech" target="_blank" className="hover:scale-110 transition-all"><img src="./svg/git.svg"></img></a>
+            <a href="https://www.linkedin.com/in/naviomaya" target="_blank" className="hover:scale-110 transition-all"><img src="./svg/linkedin.svg"></img></a>
+            <a href="mailto:naviomaya@gmail.com" target="_blank" className="hover:scale-110 transition-all"><img src="./svg/mail.svg"></img></a>
           </div>
       </nav>
       </section>

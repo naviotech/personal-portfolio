@@ -64,20 +64,20 @@ const Header = ({ theme, handleSun, handleMoon }) => {
 
       <section className=" w-full flex flex-col justify-center items-center gap-12 py-16 md:flex-row-reverse md:items-center md:justify-center md:gap-0  max-w-screen-xl">
         <figure className="w-[60%] margin-auto  flex flex-col justify-center items-center drop-shadow-xl md:w-[30%] lg:w-[50]">
-          <img className="drop-shadow-xl rounded-full w-[100%]" src="/img/IMG_4378.jpeg" alt="personal-image" title="it's me"></img>
+          <img className="drop-shadow-xl rounded-full w-[100%]" src="./img/IMG_4378.jpeg" alt="personal-image" title="it's me"></img>
         </figure>
         
         <article className="md:w-[60%]">
           <h1 className=" text-2xl mb-2 lg:text-4xl dark:text-dark-title">{t("header.soy")} <strong>Edu</strong> 🙋🏼‍♂️,</h1>
           <p className="text-black lg:text-xl dark:text-white md:w-[80%]">{t("header.presentation")}</p>
           <div className="flex gap-2 mt-10">
-            <img src="/svg/ubication.svg"></img>
+            <img src="./svg/ubication.svg"></img>
             <p className="dark:text-dark-subtitle">{t("header.ubication")}</p>
           </div>
           <div className="flex gap-4 mt-6 mb-6 justify-start items-center">
-            <a href="https://github.com/naviotech" target="_blank" className="hover:scale-110 transition-all"><img src="/svg/git.svg"></img></a>
-            <a href="https://www.linkedin.com/in/naviomaya" target="_blank" className="hover:scale-110 transition-all"><img src="/svg/linkedin.svg"></img></a>
-            <a href="mailto:naviomaya@gmail.com" target="_blank" className="hover:scale-110 transition-all"><img src="/svg/mail.svg"></img></a>
+            <a href="https://github.com/naviotech" target="_blank" className="hover:scale-110 transition-all"><img src="./svg/git.svg"></img></a>
+            <a href="https://www.linkedin.com/in/naviomaya" target="_blank" className="hover:scale-110 transition-all"><img src="./svg/linkedin.svg"></img></a>
+            <a href="mailto:naviomaya@gmail.com" target="_blank" className="hover:scale-110 transition-all"><img src="./svg/mail.svg"></img></a>
           </div>
           <div className="md:w-[40%] hidden  md:justify-center md:flex md:items-center cursor-pointer">
             <a className="text-center py-3 min-w-full rounded-lg dark:bg-dark-title dark:text-black bg-gray-900 text-white hover:bg-gray-900/50 hover:text-black font-bold md:text-sm dark:hover:bg-slate-500 dark:hover:text-dark-title">{t("header.cv")}</a>

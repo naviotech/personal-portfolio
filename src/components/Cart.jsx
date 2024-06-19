@@ -17,8 +17,8 @@ const Cart = ({ img,title, description,urlGit, urlWeb, tecnologias }) => {
         </div>
         
         <div className="flex gap-2 ">
-          <a href={urlGit} target="_blank" className="hover:scale-125 transition-all cursor-pointer"><img src="/svg/git.svg"></img></a>
-          <a href={urlWeb} target="_blank" className="hover:scale-125 transition-all cursor-pointer"><img src="/svg/link.svg"></img></a>
+          <a href={urlGit} target="_blank" className="hover:scale-125 transition-all cursor-pointer"><img src="./svg/git.svg"></img></a>
+          <a href={urlWeb} target="_blank" className="hover:scale-125 transition-all cursor-pointer"><img src="./svg/link.svg"></img></a>
         </div>
       </main>
     </article>
