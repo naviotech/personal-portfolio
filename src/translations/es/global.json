@@ -37,9 +37,9 @@
     "projects": {
       "title": "Proyectos",
       "url": "Acortador de URL",
-      "urlp": "Herramienta de cotización de criptomonedas en tiempo real, que incluye las noticias más importantes del mundo de las criptomonedas del día.",
+      "urlp": "Herramienta que acorta URLs largas y genera automáticamente un código QR para cada una. Facilita el acceso y la compartición de enlaces, ideal para marketing y eventos. Mejora la experiencia del usuario con enlaces más manejables y accesibles visualmente.",
       "cripto": "Cotización de criptomonedas",
-      "criptop": "Un conversor de criptomonedas que permite a los usuarios convertir rápidamente entre diferentes criptomonedas y monedas tradicionales. Proporciona tasas de cambio en tiempo real y soporta una variedad de criptomonedas, ofreciendo una herramienta conveniente para el seguimiento y gestión de inversiones en criptomonedas.",
+      "criptop": "Herramienta para seguir los precios y variaciones de tus criptomonedas favoritas pudiendo elegir la divisa que mas se ajuste a tu localización. También tiene sección de noticias actualizadas sobre el mundo cripto.",
       "fitness": "Calculadora fitness",
       "fitnessp": "Una aplicación que calcula las comidas que consumes a lo largo del día junto con el ejercicio que realizas, y genera un balance total de energía para tu día.",
       "game": "Juego de parejas",

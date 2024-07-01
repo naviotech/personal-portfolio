@@ -37,9 +37,9 @@
     "projects": {
       "title": "Projects",
       "url": "URL Shortener",
-      "urlp": "His is a real-time cryptocurrency quote tool, featuring the day's most important news in the crypto world.",
+      "urlp": "A tool that shortens long URLs and automatically generates a QR code for each one. It facilitates access and sharing of links, making it ideal for marketing and events. It enhances the user experience with more manageable and visually accessible links.",
       "cripto": "Crypto quote",
-      "criptop": "A cryptocurrency converter allows users to quickly convert between different cryptocurrencies and traditional currencies. It provides real-time exchange rates and supports a variety of cryptocurrencies, offering a convenient tool for tracking and managing crypto investments.",
+      "criptop": "A tool to track the prices and variations of your favorite cryptocurrencies, allowing you to choose the currency that best suits your location. It also has a section for up-to-date news about the crypto world.",
       "fitness": "Fitness Calculator",
       "fitnessp": "An app that calculates the meals you consume throughout the day along with the exercise you do, and generates a total energy balance for your day.",
       "game": "Matching pairs game",
