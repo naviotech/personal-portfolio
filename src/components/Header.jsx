@@ -56,7 +56,7 @@ const Header = ({ theme, handleSun, handleMoon }) => {
             <button onClick={()=> i18n.changeLanguage("en")} className="text-3xl">🇺🇸</button>
           </div>
           <div className="w-full flex justify-center items-center md:hidden cursor-pointer">
-            <a href="../../public/docs/cv.pdf" download={"cv.pdf"} className="text-center py-2 min-w-full rounded-lg dark:bg-dark-title bg-gray-900 dark:text-black text-white hover:bg-gray-900/50 hover:text-black font-bold md:text-sm dark:hover:bg-slate-500 dark:hover:text-dark-title">{t("header.cv")}</a>
+            <a href="./docs/cv.pdf" download={"cv.pdf"} className="text-center py-2 min-w-full rounded-lg dark:bg-dark-title bg-gray-900 dark:text-black text-white hover:bg-gray-900/50 hover:text-black font-bold md:text-sm dark:hover:bg-slate-500 dark:hover:text-dark-title">{t("header.cv")}</a>
           </div>
           
         </div>
@@ -80,7 +80,7 @@ const Header = ({ theme, handleSun, handleMoon }) => {
             <a href="mailto:edu@naviotech.dev" target="_blank" className="hover:scale-110 transition-all"><img src="./svg/mail.svg"></img></a>
           </div>
           <div className="md:w-[40%] hidden  md:justify-center md:flex md:items-center cursor-pointer">
-            <a href="../../public/docs/cv.pdf" download={"cv.pdf"} className="text-center py-3 min-w-full rounded-lg dark:bg-dark-title dark:text-black bg-gray-900 text-white hover:bg-gray-900/50 hover:text-black font-bold md:text-sm dark:hover:bg-slate-500 dark:hover:text-dark-title">{t("header.cv")}</a>
+            <a href="./docs/cv.pdf" download={"cv.pdf"} className="text-center py-3 min-w-full rounded-lg dark:bg-dark-title dark:text-black bg-gray-900 text-white hover:bg-gray-900/50 hover:text-black font-bold md:text-sm dark:hover:bg-slate-500 dark:hover:text-dark-title">{t("header.cv")}</a>
           </div>
         </article>
       </section>
