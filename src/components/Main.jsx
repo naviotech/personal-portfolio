@@ -10,6 +10,8 @@ const Main = () => {
   const [ data, setData ] = useState(false)
   const [ more, setMore ] = useState(false)
 
+  const [show, setShow] = useState(false)
+
   const [ t ] = useTranslation("global")
 
   return (
@@ -22,7 +24,7 @@ const Main = () => {
         </article>
       </section>
 
-      <section className="w-full p-4 py-16 md:px-10 lg:px-20 max-w-screen-2xl ">
+      <section className="w-full p-4 py-16 md:px-10 lg:px-20 max-w-screen-2xl flex flex-col justify-center items-center">
         <h2 id="projects" className="text-center font-bold text-2xl mb-6 md:mb-20 md:text-2xl xl:text-3xl dark:text-dark-title">{t("main.projects.title")}</h2>
         <section className="flex flex-col gap-12 md:grid md:grid-cols-2 md:gap-6 xl:grid-cols-3 xl:gap-6">
           <Cart
@@ -42,23 +44,24 @@ const Main = () => {
             urlWeb={"https://coin-market-watch.netlify.app/"}
             tecnologias={["Html", "JavaScript", "TailwindCss", "Vite"]}
           />
+          
+          <Cart
+              img={"./img/expense.png"}
+              title={t("main.projects.expense")}
+              description={t("main.projects.expensep")}
+              urlGit={"https://github.com/naviotech/expense-planner"}
+              urlWeb={"https://expense-planner-naviotech.netlify.app/"}
+              tecnologias={["Html", "TypeScript", "Vite", "React", "TailwindCss"]}
+            />
+          
 
           <Cart
-            img={"./img/Fitness.png"}
-            title={t("main.projects.fitness")}
-            description={t("main.projects.fitnessp")}
-            urlGit={"https://github.com/naviotech/Fitness-Calculator"}
-            urlWeb={"https://fitnesscalculator.netlify.app/"}
-            tecnologias={["Html", "JavaScript", "TailwindCss", "Vite", "React", "TypeScript"]}
-          />
-
-          <Cart
-            img={"./img/parejas.png"}
-            title={t("main.projects.game")}
-            description={t("main.projects.gamep")}
-            urlGit={"https://github.com/naviotech/Juego-encontrar-parejas"}
-            urlWeb={"https://encontrar-parejas.netlify.app/"}
-            tecnologias={["Html", "JavaScript", "Vite", "React"]}
+            img={"./img/cocktail.png"}
+            title={t("main.projects.cocktail")}
+            description={t("main.projects.cocktailp")}
+            urlGit={"https://github.com/naviotech/Cocktails-App"}
+            urlWeb={"https://cocktail-app-naviotech.netlify.app/"}
+            tecnologias={["Html","TailwindCss", "TypeScript", "Vite", "React"]}
           />
 
           <Cart
@@ -71,14 +74,61 @@ const Main = () => {
           />
 
           <Cart
-            img={"./img/Guitar.png"}
-            title={t("main.projects.guitar")}
-            description={t("main.projects.guitarp")}
-            urlGit={"https://github.com/naviotech/guitarShop"}
-            urlWeb={"https://guitarshoop.netlify.app/"}
-            tecnologias={["Html", "JavaScript", "TailwindCss","React" ]}
+            img={"./img/clone.jpg"}
+            title={t("main.projects.weather")}
+            description={t("main.projects.weatherp")}
+            urlGit={"https://github.com/naviotech/FinalWeatherApp"}
+            urlWeb={"https://finalweatherapp-naviotech.netlify.app/"}
+            tecnologias={["Html","TailwindCss", "TypeScript", "Vite","React" ]}
           />
+          
         </section>
+        <button className="mt-20 mb-12 self-center flex items-center justify-center gap-1 text-lg text-white bg-gray-900 dark:bg-black py-1 px-4 rounded-xl" value={show} onClick={()=>{ setShow(!show)}}>{show ? `${t("main.skills.less")}` : `${t("main.skills.more")}`} {show ? (
+                <span>
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <rect fill="none" x="0" y="0" width="24" height="24"></rect>
+                    <path fill="#ffffff" d="M18.707 14.293l-6-6c-0.391-0.391-1.024-0.391-1.414 0l-6 6c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l5.293-5.293 5.293 5.293c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414z"></path>
+                  </svg>
+                </span>
+              ): (
+                <span>
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <rect fill="none" x="0" y="0" width="24" height="24"></rect>
+                    <path fill="#ffffff" d="M5.293 9.707l6 6c0.391 0.391 1.024 0.391 1.414 0l6-6c0.391-0.391 0.391-1.024 0-1.414s-1.024-0.391-1.414 0l-5.293 5.293-5.293-5.293c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414z"></path>
+                  </svg>
+                </span>
+                )}
+        </button>
+        {show && (
+          <section className="flex flex-col gap-12 md:grid md:grid-cols-2 md:gap-6 xl:grid-cols-3 xl:gap-6">
+            <Cart
+              img={"./img/Guitar.png"}
+              title={t("main.projects.guitar")}
+              description={t("main.projects.guitarp")}
+              urlGit={"https://github.com/naviotech/guitarShop"}
+              urlWeb={"https://guitarshoop.netlify.app/"}
+              tecnologias={["Html", "JavaScript", "TailwindCss","React" ]}
+            />
+
+            <Cart
+              img={"./img/parejas.png"}
+              title={t("main.projects.game")}
+              description={t("main.projects.gamep")}
+              urlGit={"https://github.com/naviotech/Juego-encontrar-parejas"}
+              urlWeb={"https://encontrar-parejas.netlify.app/"}
+              tecnologias={["Html", "JavaScript", "Vite", "React"]}
+            />
+
+            <Cart
+              img={"./img/Fitness.png"}
+              title={t("main.projects.fitness")}
+              description={t("main.projects.fitnessp")}
+              urlGit={"https://github.com/naviotech/Fitness-Calculator"}
+              urlWeb={"https://fitnesscalculator.netlify.app/"}
+              tecnologias={["Html", "JavaScript", "TailwindCss", "Vite", "React", "TypeScript"]}
+            />
+          </section>
+        )}
       </section>
 
       <section className="bg-gray-50 w-full p-4 py-16 md:px-10 lg:px-20 flex flex-col justify-center items-center dark:bg-dark-secondary">
@@ -164,7 +214,7 @@ const Main = () => {
               )}
             </article>
             <article className="w-full flex flex-col">
-              <button className="self-center flex items-center justify-center gap-1 text-lg text-white bg-gray-900 dark:bg-black py-1 px-4 rounded-xl" value={more} onClick={()=>{ more ? setMore(false): setMore(true), setBack(false), setData(false),setFront(false)}}>{t("main.skills.more")} {more ? (
+              <button className="self-center flex items-center justify-center gap-1 text-lg text-white bg-gray-900 dark:bg-black py-1 px-4 rounded-xl" value={more} onClick={()=>{ more ? setMore(false): setMore(true), setBack(false), setData(false),setFront(false)}}>{more ? `${t("main.skills.less")}` : `${t("main.skills.more")}`} {more ? (
                 <span>
                   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                     <rect fill="none" x="0" y="0" width="24" height="24"></rect>
@@ -178,7 +228,8 @@ const Main = () => {
                     <path fill="#ffffff" d="M5.293 9.707l6 6c0.391 0.391 1.024 0.391 1.414 0l6-6c0.391-0.391 0.391-1.024 0-1.414s-1.024-0.391-1.414 0l-5.293 5.293-5.293-5.293c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414z"></path>
                   </svg>
                 </span>
-                )}</button>
+                )}
+              </button>
                 {more &&(
                 <div className="flex mt-4 flex-wrap gap-4 w-full justify-center lg:gap-8 md:mt-6 lg:mt-12 md:mb-4 lg:mb-10">
                   <Tech img={"/svg/gittech.svg"} title={"Git"}/>

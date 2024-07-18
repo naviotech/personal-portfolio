@@ -23,6 +23,7 @@
     "skills":{
       "title": "Skills",
       "more": "More",
+      "less": "Less",
       "database": "DataBase"
     },
     "education": {
@@ -47,7 +48,13 @@
       "ecomerce": "Headphones e-commerce",
       "ecomercep": "Headphones e-commerce with integrated store and simulated payment.",
       "guitar": "Guitar Shop",
-      "guitarp": "Project of a guitar store with an included shopping cart."
+      "guitarp": "Project of a guitar store with an included shopping cart.",
+      "cocktail":"Cocktail App",
+      "cocktailp": "Project to find out which cocktails and drinks you can make with the ingredients you have, featuring a recipe book and a favorites section.",
+      "weather":"Weather App",
+      "weatherp":"Weather application that locates you and displays your location, the current weather, and its forecast for the coming days, as well as other important data. It also provides the ability to search for other locations.",
+      "expense":"Expense Planner",
+      "expensep":"Expense planner to manage your financial goals. It has multiple features and can group expenses by type if desired."
     }
   },
   "footer": {

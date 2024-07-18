@@ -23,6 +23,7 @@
     "skills":{
       "title": "Habilidades",
       "more": "Más",
+      "less": "Menos",
       "database": "Base de Datos"
     },
     "education": {
@@ -47,7 +48,13 @@
       "ecomerce": "Comercio electrónico de auriculares",
       "ecomercep": "Comercio electrónico de auriculares con tienda integrada y simulación de pagos.",
       "guitar": "Tienda de guitarras",
-      "guitarp": "Proyecto de una tienda de guitarras con carrito de compras incluido."
+      "guitarp": "Proyecto de una tienda de guitarras con carrito de compras incluido.",
+      "cocktail":"App de cócteles",
+      "cocktailp": "Proyecto para consultar con los ingredientes que tienes que cocktails y bebidas hacer, mostrando recetario y sección de favoritos.",
+      "weather":"App del tiempo",
+      "weatherp":"Aplicación de tiempo que te localiza y visualiza tu ubicación, el tiempo atmosférico y su previsión en los días posteriores, así como otros datos importantes. También brinda la posibilidad de buscar otras ubicaciones.",
+      "expense":"Planificador de gastos",
+      "expensep":"Planificador de gastos para controlar tus metas financieras. Cuenta con multiples funcionalidades y si se desea agrupa los gastos por tipos."
     }
   },
   "footer": {
