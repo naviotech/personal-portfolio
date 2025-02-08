@@ -30,9 +30,18 @@
       "title": "Education",
       "master": "(Master's degree)",
       "course": "(Course)",
-      "sep": "sep.",
-      "jan": "jan.",
-      "dec": "dec.",
+      "Enero": "Jan.",
+      "Febrero": "Feb.",
+      "Marzo": "Mar.",
+      "Abril": "Apr.",
+      "Mayo": "May.",
+      "Junio": "Jun.",
+      "Julio": "Jul.",
+      "Agosto": "Aug.",
+      "Septiembre": "Sep.",
+      "Octubre": "Oct.",
+      "Noviembre": "Nov.",
+      "Diciembre": "Dec.",
       "present": "Present"
     },
     "projects": {
@@ -55,6 +64,9 @@
       "weatherp":"Weather application that locates you and displays your location, the current weather, and its forecast for the coming days, as well as other important data. It also provides the ability to search for other locations.",
       "expense":"Expense Planner",
       "expensep":"Expense planner to manage your financial goals. It has multiple features and can group expenses by type if desired."
+    },
+    "experiences":{
+      "need": "Developed and optimized a user dashboard to improve service management and increase customer retention. Implemented a passwordless authentication system, enhancing security and reducing IT workload. Led the development of a mobile app to automate internal processes, optimizing time and resources. Work in an Agile environment, collaborating with designers and developers to deliver scalable and efficient solutions."
     }
   },
   "footer": {

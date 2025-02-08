@@ -1,5 +1,5 @@
 {
-  "header":{
+  "header": {
     "about": "Sobre mí",
     "projects": "Proyectos",
     "education": "Educación",
@@ -20,7 +20,7 @@
       "exp2": "En lugar de ver esto como una desventaja, creo que me ha permitido ser autodidacta y desarrollar habilidades para resolver problemas de cierta manera. Siempre estoy buscando desafíos que me permitan crecer y mejorar mis habilidades.",
       "title": "Experiencia"
     },
-    "skills":{
+    "skills": {
       "title": "Habilidades",
       "more": "Más",
       "less": "Menos",
@@ -30,9 +30,18 @@
       "title": "Educación",
       "master": "(Máster)",
       "course": "(Curso)",
-      "sep": "sept.",
-      "jan": "ene.",
-      "dec": "dic.",
+      "Enero": "Ene.",
+      "Febrero": "Feb.",
+      "Marzo": "Mar.",
+      "Abril": "Abr.",
+      "Mayo": "May.",
+      "Junio": "Jun.",
+      "Julio": "Jul.",
+      "Agosto": "Ago.",
+      "Septiembre": "Sept.",
+      "Octubre": "Oct.",
+      "Noviembre": "Nov.",
+      "Diciembre": "Dic.",
       "present": "Presente"
     },
     "projects": {
@@ -49,12 +58,15 @@
       "ecomercep": "Comercio electrónico de auriculares con tienda integrada y simulación de pagos.",
       "guitar": "Tienda de guitarras",
       "guitarp": "Proyecto de una tienda de guitarras con carrito de compras incluido.",
-      "cocktail":"App de cócteles",
+      "cocktail": "App de cócteles",
       "cocktailp": "Proyecto para consultar con los ingredientes que tienes que cocktails y bebidas hacer, mostrando recetario y sección de favoritos.",
-      "weather":"App del tiempo",
-      "weatherp":"Aplicación de tiempo que te localiza y visualiza tu ubicación, el tiempo atmosférico y su previsión en los días posteriores, así como otros datos importantes. También brinda la posibilidad de buscar otras ubicaciones.",
-      "expense":"Planificador de gastos",
-      "expensep":"Planificador de gastos para controlar tus metas financieras. Cuenta con multiples funcionalidades y si se desea agrupa los gastos por tipos."
+      "weather": "App del tiempo",
+      "weatherp": "Aplicación de tiempo que te localiza y visualiza tu ubicación, el tiempo atmosférico y su previsión en los días posteriores, así como otros datos importantes. También brinda la posibilidad de buscar otras ubicaciones.",
+      "expense": "Planificador de gastos",
+      "expensep": "Planificador de gastos para controlar tus metas financieras. Cuenta con multiples funcionalidades y si se desea agrupa los gastos por tipos."
+    },
+    "experiences": {
+      "need": "Desarrollo y optimización de un panel de usuario para mejorar la gestión de servicios, aumentando la retención de clientes. Implementé un sistema de autenticación sin contraseña, mejorando la seguridad y reduciendo la carga operativa en IT. Lideré el desarrollo de una app móvil para automatizar procesos internos, optimizando tiempos y recursos. Trabajo en un entorno Agile, colaborando con diseñadores y desarrolladores para entregar soluciones escalables y eficientes."
     }
   },
   "footer": {
