@@ -200,7 +200,7 @@ const Header = ({ theme, handleSun, handleMoon }) => {
             >
               <img src="./svg/linkedin.svg"></img>
             </a>
-            <a href="mailto:naviomaya@gmail.com" target="_blank" className="transition-all hover:scale-110">
+            <a href="mailto:enavio.tech@gmail.com" target="_blank" className="transition-all hover:scale-110">
               <img src="./svg/mail.svg"></img>
             </a>
           </div>
